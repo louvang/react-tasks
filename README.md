@@ -2,7 +2,7 @@
 
 [React Tasks](https://louvang.github.io/react-tasks/) is a simple todo list made with [React](https://reactjs.org/). Todo list items are saved to the user's local storage so when the user refreshes the page, their todos will remain intact.
 
-<p align="center"><a href="https://louvang.github.io/react-tasks/" target="_blank"><img src="https://raw.githubusercontent.com/louvang/react-tasks/main/preview.jpg" alt="React Tasks" width="750px" /></a></p>
+<p align="center"><a href="https://louvang.github.io/react-tasks/" target="_blank"><img src="https://github.com/louvang/react-tasks/blob/main/preview.png?raw=true" alt="React Tasks" width="750px" /></a></p>
 
 ## Thoughts
 
