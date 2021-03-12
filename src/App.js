@@ -9,12 +9,20 @@ import uniqid from 'uniqid';
 
 library.add(faCircle, faCheckCircle, farCircle);
 
-let storedPendingTasks = [];
+let storedPendingTasks = [
+  { task: 'Buy milk and bread', id: uniqid() },
+  { task: 'Refill gas', id: uniqid() },
+  { task: 'Make reservations for anniversary', id: uniqid() },
+  { task: 'Dentist appointment @ 11am', id: uniqid() },
+];
 if (localStorage.getItem('storedPendingTasks')) {
   storedPendingTasks = JSON.parse(localStorage.getItem('storedPendingTasks'));
 }
 
-let storedCompletedTasks = [];
+let storedCompletedTasks = [
+  { task: 'Laundry', id: uniqid() },
+  { task: 'Return library books', id: uniqid() },
+];
 if (localStorage.getItem('storedCompletedTasks')) {
   storedCompletedTasks = JSON.parse(localStorage.getItem('storedCompletedTasks'));
 }
@@ -27,12 +35,6 @@ class App extends Component {
       pendingTasks: storedPendingTasks,
       completedTasks: storedCompletedTasks,
     };
-
-    this.changeNewTask = this.changeNewTask.bind(this);
-    this.submitNewTask = this.submitNewTask.bind(this);
-    this.checkmarkTask = this.checkmarkTask.bind(this);
-    this.editTask = this.editTask.bind(this);
-    this.deleteTask = this.deleteTask.bind(this);
   }
 
   changeNewTask = (e) => {
